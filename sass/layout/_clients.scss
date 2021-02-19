@@ -1,0 +1,46 @@
+.clients {
+  padding: 94px 0;
+  text-align: center;
+}
+
+.client-list {
+  display: flex;
+  list-style: none;
+}
+
+.client-item {
+  display: block;
+  margin-right: 30px;
+  width: 170px;
+  height: 90px;
+}
+
+.client-item:last-child {
+  margin-right: 0;
+}
+
+.client-item-link {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: #afb1b8;
+  fill: #afb1b8;
+  transition: border-color var(--time) var(--delay),
+    fill var(--time) var(--delay);
+}
+
+.client-item-link:hover,
+.client-item-link:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.client-item-logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

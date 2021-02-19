@@ -1,0 +1,52 @@
+.form-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-color);
+}
+
+.checkbox-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+  margin: 0;
+}
+
+.tick {
+  display: inline-block;
+  margin-right: 8px;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  fill: var(--white-color);
+  transition: border-color var(--time) var(--delay),
+    background-color var(--time) var(--delay);
+}
+
+.checkbox.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.checkbox:hover + .tick,
+.checkbox:focus + .tick {
+  border-color: var(--accent-color);
+}
+
+.checkbox:checked + .tick {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  box-shadow: none;
+}

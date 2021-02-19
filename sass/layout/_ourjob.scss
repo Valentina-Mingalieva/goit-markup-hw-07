@@ -1,0 +1,48 @@
+.ourjob {
+  display: block;
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--h-color);
+  margin-bottom: 50px;
+}
+
+.ourjob-list {
+  display: flex;
+  list-style: none;
+}
+
+.ourjob-list-item {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.ourjob-list-item:last-child {
+  margin-right: 0px;
+}
+
+.job-action {
+  position: relative;
+}
+
+.job-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background: rgba(47, 48, 58, 0.8);
+}

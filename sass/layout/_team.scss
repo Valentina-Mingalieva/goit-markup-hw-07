@@ -1,0 +1,97 @@
+.team {
+  background: #f5f4fa;
+  padding: 94px 0;
+  text-align: center;
+}
+
+.members {
+  display: flex;
+  list-style: none;
+}
+
+.member-card {
+  display: inline-block;
+  margin-right: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  background-color: var(--white-color);
+}
+
+.member-card:last-child {
+  margin-right: 0px;
+}
+
+.member-picture {
+  left: 215px;
+  top: 1635px;
+  border-radius: 0px;
+}
+
+.card-text {
+  padding: 30px;
+}
+
+.member-name {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--h-color);
+}
+
+.member-job {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--text-color);
+}
+
+.member-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+.member-links-item {
+  display: block;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.member-links-item:last-child {
+  margin-right: 0;
+}
+
+.member-link {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  background-color: inherit;
+  transition: background-color var(--time) var(--delay),
+    fill var(--time) var(--delay);
+}
+
+.link-icon {
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.member-link:hover,
+.member-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
+}

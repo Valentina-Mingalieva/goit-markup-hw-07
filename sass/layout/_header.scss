@@ -4,10 +4,6 @@
   border-bottom: 1px solid #ececec;
 }
 
-.oneline {
-  display: flex;
-}
-
 .navigation {
   display: flex;
 }
@@ -21,32 +17,28 @@
   display: inline-block;
   margin-right: 50px;
   position: relative;
-}
 
-.nav-links .nav-links__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .nav-links__link {
   display: inline-block;
   padding: 32px 0;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(500, 14px, 1.14);
   letter-spacing: 0.02em;
   color: var(--h-color);
   transition: color var(--time) var(--delay);
-}
 
-.nav-links__link:hover,
-.nav-links__link:focus,
-.header-address__link:hover,
-.header-address__link:focus {
-  color: var(--accent-color);
-}
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 
-.nav-links__link--current {
-  color: var(--accent-color);
+  &--current {
+    color: var(--accent-color);
+  }
 }
 
 .nav-links__link::after {
@@ -61,11 +53,11 @@
   bottom: 0;
   visibility: hidden;
   transition: visibility var(--time) var(--delay);
-}
 
-.nav-links__link:hover::after,
-.nav-links__link:focus::after {
-  visibility: visible;
+  &:hover::after,
+  &:focus::after {
+    visibility: visible;
+  }
 }
 
 .header-address {
@@ -78,22 +70,25 @@
   display: inline-block;
   margin-right: 50px;
   color: var(--text-color);
-}
 
-.header-address .header-address__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .header-address__link {
   display: flex;
   align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(500, 14px, 1.14);
   letter-spacing: 0.02em;
   color: var(--text-color);
   padding: 32px 0;
   transition: color var(--time) var(--delay);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .header-address__icon {
@@ -101,9 +96,9 @@
   margin-right: 10px;
   fill: currentColor;
   transition: color var(--time) var(--delay);
-}
 
-.header-address__icon:hover,
-.header-address__icon:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

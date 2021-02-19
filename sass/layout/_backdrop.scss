@@ -8,14 +8,14 @@
   opacity: 1;
   visibility: visible;
   transition: visibility var(--time) var(--delay);
-}
 
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
 
-.backdrop.is-hidden .modal {
-  opacity: 0;
+    & .modal {
+      opacity: 0;
+    }
+  }
 }

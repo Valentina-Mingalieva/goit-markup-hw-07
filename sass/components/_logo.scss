@@ -1,26 +1,24 @@
 .logo {
   display: inline-block;
   font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  @include font(700, 26px, 1.19);
   color: var(--accent-color);
-}
 
-.logo--header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
-}
+  &--header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
 
-.logo--footer {
-  margin-bottom: 20px;
-}
+  &--footer {
+    margin-bottom: 20px;
+  }
 
-.logo--above {
-  color: var(--h-color);
-}
+  &--above {
+    color: var(--h-color);
+  }
 
-.logo--below {
-  color: var(--white-color);
+  &--below {
+    color: var(--white-color);
+  }
 }

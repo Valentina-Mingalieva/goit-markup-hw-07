@@ -26,15 +26,15 @@
   cursor: pointer;
   transition: fill var(--time) var(--delay);
   fill: currentColor;
+
+  &:focus,
+  &:hover {
+    fill: var(--accent-color);
+  }
 }
 
 .close__sign {
   content: "";
   height: 11px;
   width: 11px;
-}
-
-.close:focus,
-.close:hover {
-  fill: var(--accent-color);
 }

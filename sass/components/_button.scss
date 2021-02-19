@@ -3,9 +3,7 @@
   padding: 8px 0;
   width: 200px;
   margin: 0 auto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
+  @include font(700, 16px, 1.875);
   letter-spacing: 0.06em;
   color: var(--white-color);
   background: var(--accent-color);
@@ -14,30 +12,25 @@
   border-color: transparent;
   cursor: pointer;
   transition: background-color var(--time) var(--delay);
-}
 
-.main-button:hover,
-.main-button:focus {
-  background-color: #188ce8;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-}
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  }
 
-.main-button.subscribe__btn {
-  margin-left: 12px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
+  &.subscribe__btn {
+    @include flex;
+    margin-left: 12px;
 
-.subscribe__icon {
-  content: "";
-  display: block;
-  margin-left: 10px;
-  height: 24px;
-  width: 24px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  fill: currentColor;
+    & .subscribe__icon {
+      content: "";
+      display: block;
+      margin-left: 10px;
+      height: 24px;
+      width: 24px;
+      @include background;
+      fill: currentColor;
+    }
+  }
 }

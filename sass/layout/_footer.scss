@@ -8,12 +8,6 @@ address {
   padding-bottom: 60px;
 }
 
-.general {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-}
-
 /* footer-one container */
 
 .footer-one {
@@ -22,17 +16,19 @@ address {
 }
 
 .footer-address {
-  display: flex;
-  flex-direction: column;
+  @include flex($fd: column);
 }
 
 .footer-address__link {
   display: inline-block;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  @include font(400, 14px, 1.7);
   color: var(--white-color);
   transition: color var(--time) var(--delay);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .contact-link {
@@ -40,19 +36,12 @@ address {
   opacity: 0.6;
 }
 
-.footer-address__link:hover,
-.footer-address__link:focus {
-  color: var(--accent-color);
-}
-
 /* footer-two container*/
 
 .footer-title {
   display: inline-block;
   margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(700, 14px, 1.14);
   text-transform: uppercase;
   color: var(--white-color);
 }
@@ -64,33 +53,27 @@ address {
 }
 
 .subscribe {
-  display: flex;
-  flex-direction: column;
+  @include flex($fd: column);
 }
 
 .subscribe__container {
-  display: flex;
-  flex-direction: row;
+  @include flex;
 }
 
 .subscribe__input {
   width: 358px;
   height: 50px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  display: flex;
-  align-items: center;
+  @include font(400, 16px, 1.25);
   color: rgba(255, 255, 255, 0.6);
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 15px 16px;
-}
 
-.subscribe__input:focus,
-.subscribe__input:hover {
-  border-color: var(--accent-color);
-  outline: none;
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+    outline: none;
+  }
 }

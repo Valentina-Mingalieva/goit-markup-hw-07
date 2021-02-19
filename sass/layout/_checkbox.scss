@@ -1,13 +1,8 @@
 .form__field {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  @include flex;
   margin-top: 10px;
   margin-bottom: 30px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  @include font(400, 14px, 1.7);
   color: var(--text-color);
 }
 
@@ -27,15 +22,15 @@
   fill: var(--white-color);
   transition: border-color var(--time) var(--delay),
     background-color var(--time) var(--delay);
-}
 
-.checkbox:hover + .checkbox__icon,
-.checkbox:focus + .checkbox__icon {
-  border-color: var(--accent-color);
-}
+  .checkbox:hover + &,
+  .checkbox:focus + & {
+    border-color: var(--accent-color);
+  }
 
-.checkbox:checked + .checkbox__icon {
-  border-color: var(--accent-color);
-  background-color: var(--accent-color);
-  box-shadow: none;
+  .checkbox:checked + & {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    box-shadow: none;
+  }
 }

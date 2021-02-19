@@ -3,23 +3,23 @@
   text-align: center;
 }
 
-.client-list {
+.clients-list {
   display: flex;
   list-style: none;
 }
 
-.client-item {
+.clients-list__item {
   display: block;
   margin-right: 30px;
   width: 170px;
   height: 90px;
 }
 
-.client-item:last-child {
+.clients-list__item:last-child {
   margin-right: 0;
 }
 
-.client-item-link {
+.clients-list__link {
   width: inherit;
   height: inherit;
   display: flex;
@@ -33,13 +33,13 @@
     fill var(--time) var(--delay);
 }
 
-.client-item-link:hover,
-.client-item-link:focus {
+.clients-list__link:hover,
+.clients-list__link:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-.client-item-logo {
+.clients-list__logo {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

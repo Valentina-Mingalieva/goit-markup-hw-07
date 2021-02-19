@@ -5,11 +5,19 @@
 
 /* buttons */
 
-.buttons {
+.buttons-list {
   list-style: none;
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
+}
+
+.buttons-list__item {
+  margin-right: 8px;
+}
+
+.buttons-list__item:last-child {
+  margin-right: 0;
 }
 
 .sort-button {
@@ -26,14 +34,6 @@
   cursor: pointer;
   transition: background-color var(--time) var(--delay),
     color var(--time) var(--delay), box-shadow var(--time) var(--delay);
-}
-
-.buttons-item {
-  margin-right: 8px;
-}
-
-.buttons .buttons-item:last-child {
-  margin-right: 0;
 }
 
 .sort-button:hover,

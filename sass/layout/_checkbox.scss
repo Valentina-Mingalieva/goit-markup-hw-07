@@ -1,4 +1,4 @@
-.form-field {
+.form__field {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,13 +11,13 @@
   color: var(--text-color);
 }
 
-.checkbox-link {
+.checkbox__link {
   color: var(--accent-color);
   text-decoration: underline;
   margin: 0;
 }
 
-.tick {
+.checkbox__icon {
   display: inline-block;
   margin-right: 8px;
   border: 2px solid #000000;
@@ -29,23 +29,12 @@
     background-color var(--time) var(--delay);
 }
 
-.checkbox.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-}
-
-.checkbox:hover + .tick,
-.checkbox:focus + .tick {
+.checkbox:hover + .checkbox__icon,
+.checkbox:focus + .checkbox__icon {
   border-color: var(--accent-color);
 }
 
-.checkbox:checked + .tick {
+.checkbox:checked + .checkbox__icon {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
   box-shadow: none;

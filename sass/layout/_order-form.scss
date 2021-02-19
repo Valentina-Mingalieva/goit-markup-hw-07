@@ -1,9 +1,9 @@
-.order-form {
+.form {
   display: flex;
   flex-direction: column;
 }
 
-.order-form-title {
+.form__title {
   display: flex;
   margin-bottom: 12px;
   font-weight: 700;
@@ -14,7 +14,7 @@
   color: var(--h-color);
 }
 
-.order-form-label {
+.form__label {
   position: relative;
   display: block;
   margin-bottom: 10px;
@@ -26,7 +26,7 @@
   color: var(--text-color);
 }
 
-.order-form-input {
+.form__input {
   display: inline-block;
   padding: 0 12px 0 42px;
   margin-top: 4px;
@@ -42,12 +42,12 @@
   color: var(--h-color);
 }
 
-.order-form-input::placeholder {
+.form__input::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.order-form-input:focus,
-.order-form-input:hover {
+.form__input:focus,
+.form__input:hover {
   border-color: var(--accent-color);
   outline: none;
 }
@@ -56,13 +56,13 @@ textarea {
   resize: none;
 }
 
-.order-form-input.comment {
+.form__input--comment {
   width: 448px;
   height: 120px;
   padding: 12px 16px;
 }
 
-.form-icon {
+.form__icon {
   position: absolute;
   display: inline-block;
   content: "";
@@ -74,7 +74,7 @@ textarea {
   transition: fill var(--time) var(--delay);
 }
 
-.order-form-input:focus + .form-icon,
-.order-form-input:hover + .form-icon {
+.form__input:focus + .form__icon,
+.form__input:hover + .form__icon {
   fill: var(--accent-color);
 }

@@ -2,22 +2,22 @@
   padding: 94px 0;
 }
 
-.list {
+.usp-list {
   display: flex;
   list-style: none;
 }
 
-.list-item {
+.usp-list__item {
   display: inline-block;
   margin-right: 30px;
   width: 270px;
 }
 
-.list-item:last-child {
+.usp-list__item:last-child {
   margin-right: 0;
 }
 
-.list-item::before {
+.usp-list__item::before {
   content: "";
   display: block;
   height: 120px;
@@ -43,7 +43,7 @@
   background-image: url("../index-images/icons/astronaut.svg");
 }
 
-.list-item-title {
+.usp-list__title {
   display: inline-block;
   height: 16px;
   margin-bottom: 10px;
@@ -54,7 +54,7 @@
   color: var(--h-color);
 }
 
-.list-item-descr {
+.usp-list__description {
   display: inline-block;
   font-weight: 400;
   font-size: 14px;

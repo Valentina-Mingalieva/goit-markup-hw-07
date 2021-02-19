@@ -21,50 +21,33 @@ address {
   margin-right: 70px;
 }
 
-.logo-footer {
-  display: inline-block;
-  margin-bottom: 20px;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--accent-color);
-}
-
-.studio-below {
-  color: var(--white-color);
-}
-
-.footer-addresses {
+.footer-address {
   display: flex;
   flex-direction: column;
 }
 
-.address-link {
+.footer-address__link {
+  display: inline-block;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   color: var(--white-color);
-}
-
-.contact-link {
-  display: inline-block;
-  margin-top: 9px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
   transition: color var(--time) var(--delay);
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.contact-link {
+  margin-top: 9px;
+  opacity: 0.6;
+}
+
+.footer-address__link:hover,
+.footer-address__link:focus {
   color: var(--accent-color);
 }
 
 /* footer-two container*/
 
-.join-title {
+.footer-title {
   display: inline-block;
   margin-bottom: 20px;
   font-weight: 700;
@@ -74,31 +57,23 @@ address {
   color: var(--white-color);
 }
 
-.down {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.foot {
-  fill: var(--white-color);
-}
-
 /* footer-three container*/
 
 .footer-three {
   margin-left: auto;
 }
 
-.subscribe-form {
+.subscribe {
   display: flex;
   flex-direction: column;
 }
 
-.subscribe-container {
+.subscribe__container {
   display: flex;
   flex-direction: row;
 }
 
-.order-form-input-footer {
+.subscribe__input {
   width: 358px;
   height: 50px;
   font-weight: 400;
@@ -114,28 +89,8 @@ address {
   padding: 15px 16px;
 }
 
-.order-form-input-footer:focus,
-.order-form-input-footer:hover {
+.subscribe__input:focus,
+.subscribe__input:hover {
   border-color: var(--accent-color);
   outline: none;
-}
-
-.subscribe-icon {
-  content: "";
-  display: block;
-  margin-left: 10px;
-  height: 24px;
-  width: 24px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  fill: currentColor;
-}
-
-.order-button.subscribe {
-  margin-left: 12px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }

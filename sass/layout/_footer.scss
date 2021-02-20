@@ -16,7 +16,7 @@ address {
 }
 
 .footer-address {
-  @include flex($fd: column);
+  @include flex($fd: column, $ai: flex-start);
 }
 
 .footer-address__link {

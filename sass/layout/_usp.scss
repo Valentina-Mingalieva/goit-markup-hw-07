@@ -17,14 +17,15 @@
   }
 }
 
-.usp-list__item::before {
-  content: "";
-  display: block;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-  @include background;
-
+.usp-list__item {
+  &::before {
+    content: "";
+    display: block;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+    @include background;
+  }
   &--antenna::before {
     background-image: url("../index-images/icons/antenna.svg");
   }

@@ -53,7 +53,8 @@ address {
 }
 
 .subscribe {
-  @include flex($fd: column);
+  display: flex;
+  flex-direction: column;
 }
 
 .subscribe__container {

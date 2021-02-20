@@ -269,7 +269,7 @@ img {
   transition: visibility var(--time) var(--delay);
 }
 
-.nav-links__link::after:hover::after, .nav-links__link::after:focus::after {
+.nav-links__link:hover::after, .nav-links__link:focus::after {
   visibility: visible;
 }
 
@@ -552,19 +552,19 @@ textarea {
   background-repeat: no-repeat;
 }
 
-.usp-list__item::before--antenna::before {
+.usp-list__item--antenna::before {
   background-image: url("../index-images/icons/antenna.svg");
 }
 
-.usp-list__item::before--clock::before {
+.usp-list__item--clock::before {
   background-image: url("../index-images/icons/clock.svg");
 }
 
-.usp-list__item::before--diagram::before {
+.usp-list__item--diagram::before {
   background-image: url("../index-images/icons/diagram.svg");
 }
 
-.usp-list__item::before--astronaut::before {
+.usp-list__item--astronaut::before {
   background-image: url("../index-images/icons/astronaut.svg");
 }
 
@@ -904,8 +904,6 @@ address {
 .subscribe {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .subscribe__container {

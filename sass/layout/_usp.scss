@@ -24,7 +24,8 @@
     height: 120px;
     margin-bottom: 30px;
     background-color: #f5f4fa;
-    @include background;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   &--antenna::before {
     background-image: url("../index-images/icons/antenna.svg");

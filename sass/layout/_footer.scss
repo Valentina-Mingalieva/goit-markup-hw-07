@@ -19,20 +19,20 @@ address {
   @include flex($fd: column, $ai: flex-start);
 }
 
-.footer-address__link {
+.footer-address__item {
   display: inline-block;
   @include font(400, 14px, 1.7);
   color: var(--white-color);
-  transition: color var(--time) var(--delay);
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
 
   &--contact-link {
     margin-top: 9px;
     opacity: 0.6;
+    transition: color var(--time) var(--delay);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }
 

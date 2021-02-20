@@ -866,7 +866,7 @@ address {
   justify-content: center;
 }
 
-.footer-address__link {
+.footer-address__item {
   display: inline-block;
   font-weight: 400;
   font-size: 14px;
@@ -875,11 +875,11 @@ address {
   transition: color var(--time) var(--delay);
 }
 
-.footer-address__link:hover, .footer-address__link:focus {
+.footer-address__item:hover, .footer-address__item:focus {
   color: var(--accent-color);
 }
 
-.footer-address__link--contact-link {
+.footer-address__item--contact-link {
   margin-top: 9px;
   opacity: 0.6;
 }

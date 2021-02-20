@@ -879,7 +879,7 @@ address {
   color: var(--accent-color);
 }
 
-.contact-link {
+.footer-address__link--contact-link {
   margin-top: 9px;
   opacity: 0.6;
 }

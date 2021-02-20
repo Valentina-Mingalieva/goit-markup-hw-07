@@ -29,11 +29,11 @@ address {
   &:focus {
     color: var(--accent-color);
   }
-}
 
-.contact-link {
-  margin-top: 9px;
-  opacity: 0.6;
+  &--contact-link {
+    margin-top: 9px;
+    opacity: 0.6;
+  }
 }
 
 /* footer-two container*/

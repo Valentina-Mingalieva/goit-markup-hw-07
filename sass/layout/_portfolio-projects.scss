@@ -20,7 +20,7 @@
 .projects__link {
   display: block;
   box-shadow: none;
-  transition: box-shadow var(--time) var(--delay);
+  @extend %transition;
 
   &:hover,
   &:focus {
@@ -65,7 +65,7 @@
   background: var(--accent-color);
   opacity: 0.9;
   transform: translateY(101%);
-  transition: transform var(--time) var(--delay);
+  @extend %transition;
 
   .projects__link:hover &,
   .projects__link:focus & {

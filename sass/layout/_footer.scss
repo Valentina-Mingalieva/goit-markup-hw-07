@@ -27,7 +27,7 @@ address {
   &--contact-link {
     margin-top: 9px;
     opacity: 0.6;
-    transition: color var(--time) var(--delay);
+    @extend %transition;
 
     &:hover,
     &:focus {

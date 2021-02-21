@@ -20,6 +20,10 @@
   overflow: hidden;
 }
 
+.main-button, .social__link, .nav-links__link, .nav-links__link::after, .header-address__link, .header-address__icon, .backdrop, .modal, .close, .form__input, .form__icon, .checkbox__icon, .clients-list__link, .sort-button, .projects__link, .jump__text, .footer-address__item--contact-link {
+  transition: all var(--time) var(--delay);
+}
+
 html {
   box-sizing: border-box;
 }
@@ -94,7 +98,6 @@ img {
   border-radius: 4px;
   border-color: transparent;
   cursor: pointer;
-  transition: background-color var(--time) var(--delay);
 }
 
 .main-button:hover, .main-button:focus {
@@ -191,7 +194,6 @@ img {
   justify-content: center;
   fill: #afb1b8;
   background-color: inherit;
-  transition: background-color var(--time) var(--delay), fill var(--time) var(--delay);
 }
 
 .social__link:hover, .social__link:focus {
@@ -244,7 +246,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--h-color);
-  transition: color var(--time) var(--delay);
 }
 
 .nav-links__link:hover, .nav-links__link:focus {
@@ -266,7 +267,6 @@ img {
   left: 0;
   bottom: 0;
   visibility: hidden;
-  transition: visibility var(--time) var(--delay);
 }
 
 .nav-links__link:hover::after, .nav-links__link:focus::after {
@@ -298,7 +298,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--text-color);
   padding: 32px 0;
-  transition: color var(--time) var(--delay);
 }
 
 .header-address__link:hover, .header-address__link:focus {
@@ -309,7 +308,6 @@ img {
   display: inline-block;
   margin-right: 10px;
   fill: currentColor;
-  transition: color var(--time) var(--delay);
 }
 
 .header-address__icon:hover, .header-address__icon:focus {
@@ -349,7 +347,6 @@ img {
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
-  transition: visibility var(--time) var(--delay);
 }
 
 .backdrop.is-hidden {
@@ -373,7 +370,6 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   opacity: 1;
-  transition: opacity var(--time) var(--delay);
   padding: 40px;
 }
 
@@ -387,7 +383,6 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  transition: fill var(--time) var(--delay);
   fill: currentColor;
 }
 
@@ -437,7 +432,6 @@ img {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border-color var(--time) var(--delay);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -473,7 +467,6 @@ textarea {
   top: 50%;
   left: 12px;
   fill: currentColor;
-  transition: fill var(--time) var(--delay);
 }
 
 .form__input:focus + .form__icon,
@@ -508,7 +501,6 @@ textarea {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   fill: var(--white-color);
-  transition: border-color var(--time) var(--delay), background-color var(--time) var(--delay);
 }
 
 .checkbox:hover + .checkbox__icon,
@@ -731,7 +723,6 @@ textarea {
   border-radius: 4px;
   border-color: #afb1b8;
   fill: #afb1b8;
-  transition: border-color var(--time) var(--delay), fill var(--time) var(--delay);
 }
 
 .clients-list__link:hover, .clients-list__link:focus {
@@ -778,7 +769,6 @@ textarea {
   border-color: transparent;
   box-shadow: none;
   cursor: pointer;
-  transition: background-color var(--time) var(--delay), color var(--time) var(--delay), box-shadow var(--time) var(--delay);
 }
 
 .sort-button:hover, .sort-button:focus {
@@ -810,7 +800,6 @@ textarea {
 .projects__link {
   display: block;
   box-shadow: none;
-  transition: box-shadow var(--time) var(--delay);
 }
 
 .projects__link:hover, .projects__link:focus {
@@ -859,7 +848,6 @@ textarea {
   background: var(--accent-color);
   opacity: 0.9;
   transform: translateY(101%);
-  transition: transform var(--time) var(--delay);
 }
 
 .projects__link:hover .jump__text,
@@ -901,7 +889,6 @@ address {
 .footer-address__item--contact-link {
   margin-top: 9px;
   opacity: 0.6;
-  transition: color var(--time) var(--delay);
 }
 
 .footer-address__item--contact-link:hover, .footer-address__item--contact-link:focus {

@@ -10,7 +10,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   opacity: 1;
-  transition: opacity var(--time) var(--delay);
+  @extend %transition;
   padding: 40px;
 }
 
@@ -24,7 +24,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  transition: fill var(--time) var(--delay);
+  @extend %transition;
   fill: currentColor;
 
   &:focus,

@@ -26,8 +26,7 @@
   @include flex;
   fill: #afb1b8;
   background-color: inherit;
-  transition: background-color var(--time) var(--delay),
-    fill var(--time) var(--delay);
+  @extend %transition;
 
   &:hover,
   &:focus {

@@ -27,8 +27,7 @@
   border-radius: 4px;
   border-color: #afb1b8;
   fill: #afb1b8;
-  transition: border-color var(--time) var(--delay),
-    fill var(--time) var(--delay);
+  @extend %transition;
 
   &:hover,
   &:focus {

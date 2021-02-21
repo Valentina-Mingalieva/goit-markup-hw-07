@@ -30,8 +30,7 @@
   border-color: transparent;
   box-shadow: none;
   cursor: pointer;
-  transition: background-color var(--time) var(--delay),
-    color var(--time) var(--delay), box-shadow var(--time) var(--delay);
+  @extend %transition;
 
   &:hover,
   &:focus {

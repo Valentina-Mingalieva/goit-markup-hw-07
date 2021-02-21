@@ -27,6 +27,25 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+  $usp-icons: "antenna", "clock", "diagram", "astronaut";
+  @each $iconName in $usp-icons {
+    &--#{$iconName}::before {
+      background-image: url("../index-images/icons/#{$iconName}.svg");
+    }
+  }
+}
+
+/* 
+.usp-list__item {
+  &::before {
+    content: "";
+    display: block;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   &--antenna::before {
     background-image: url("../index-images/icons/antenna.svg");
   }
@@ -39,7 +58,7 @@
   &--astronaut::before {
     background-image: url("../index-images/icons/astronaut.svg");
   }
-}
+} */
 
 .usp-list__title {
   display: inline-block;
